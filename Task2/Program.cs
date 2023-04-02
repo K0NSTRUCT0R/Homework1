@@ -1,2 +1,2 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿// Программа, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 Console.WriteLine("Hello, World!");
