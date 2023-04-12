@@ -16,8 +16,8 @@ void Main ()
             case "exit": isWorking = false; break;
             case "t1": Task1 (); break;
             case "t3": Task3 (); break;
-            default:
-                break;
+            case "t4": Task4 (); break;
+            default: break;
         }
     }
 }
@@ -67,6 +67,7 @@ bool IsMoreThan(int number1, int number2)
 // Программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
 
 void Task3()
+
 {
     if (IsEven (ReadInt ("Number")))
     {
@@ -84,3 +85,21 @@ bool IsEven (int number)
 }
 
 // Программа, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+
+void Task4()
+{
+    ShowListNumbers(ReadInt("length"));
+}
+
+void ShowListNumbers (int n)
+{
+    for (int i = 1; i < n; i++)
+    {
+        if (IsEven(i))
+        {
+            Console.Write($"(i), ");
+        }
+    }
+   Console.WriteLine(n);
+ 
+}
