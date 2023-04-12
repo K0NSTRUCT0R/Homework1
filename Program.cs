@@ -15,6 +15,7 @@ void Main ()
         {
             case "exit": isWorking = false; break;
             case "t1": Task1 (); break;
+            case "t3": Task3 (); break;
             default:
                 break;
         }
@@ -22,7 +23,6 @@ void Main ()
 }
 
 // Программа, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
-Task1();
 
 void Task1()
 {
@@ -65,4 +65,22 @@ bool IsMoreThan(int number1, int number2)
 
 // Программа, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 // Программа, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+void Task3()
+{
+    if (IsEven (ReadInt ("Number")))
+    {
+        Console.WriteLine ("Yes");
+    }
+    else
+    {
+        Console.WriteLine ("No");
+    }
+}
+
+bool IsEven (int number)
+{
+    return number % 2 == 0;
+}
+
 // Программа, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
